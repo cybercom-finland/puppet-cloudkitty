@@ -128,8 +128,6 @@ class cloudkitty::logging(
   oslo::log { 'cloudkitty_config':
     use_stderr                    => $use_stderr,
     use_syslog                    => $use_syslog,
-    use_json                      => $use_json,
-    use_journal                   => $use_journal,
     log_dir                       => $log_dir,
     log_file                      => $log_file,
     debug                         => $debug,
